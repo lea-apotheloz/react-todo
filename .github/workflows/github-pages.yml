@@ -35,24 +35,24 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: 22
-        cache: 'pnpm',
+        cache: 'pnpm'
 
-        # If you use other package managers like yarn or pnpm,
-        # you will need to install them first
-        - name: Install dependencies
-          run: pnpm i
+    # If you use other package managers like yarn or pnpm,
+    # you will need to install them first
+    - name: Install dependencies
+      run: pnpm i
 
-        - name: Build
-          run: pnpm run build
+    - name: Build
+      run: pnpm run build
 
-        - name: Setup Pages
-          uses: actions/configure-pages@v5
+    - name: Setup Pages
+      uses: actions/configure-pages@v5
 
-        - name: Upload artifact
-          uses: actions/upload-pages-artifact@v3
-          with:
-            path: './dist'
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: './dist'
 
-        - name: Deploy to GitHub Pages
-          id: deployment
-          uses: actions/deploy-pages@v4
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
