@@ -24,27 +24,26 @@ body {
   font-weight: 400;
   opacity: 0.6;
 }
-.TodoList{
+.TodoList {
   display: flex;
   margin-top: 2rem;
   font-size: 1.5rem;
 }
-ul{
+ul {
   padding-left: 830px;
 }
-li{
+li {
   width: 300px;
   height: 50px;
   display: flex;
   align-items: center;
   background: #1f023c;
   margin-top: 10px;
-
 }
-.del{
+.del {
   margin-left: 30px;
 }
-button{
+button {
   margin-right: 10px;
   margin-left: 10px;
   border: #8e1eff solid 3px;
@@ -55,7 +54,7 @@ button{
   background-position: 10px 10px;
   background-repeat: no-repeat;
 }
-input{
+input {
   border: #8e1eff solid 3px;
   border-radius: 8px;
   height: 30px;
@@ -64,7 +63,7 @@ input{
   background-position: 10px 10px;
   background-repeat: no-repeat;
 }
-select{
+select {
   border: #8e1eff solid 3px;
   border-radius: 8px;
   height: 30px;
@@ -73,4 +72,3 @@ select{
   background-position: 10px 10px;
   background-repeat: no-repeat;
 }
-
