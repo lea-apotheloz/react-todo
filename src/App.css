@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  color: #000;
+  color: #ffffff;
   font-family: cursive;
-  background-image: linear-gradient(to bottom, #a540ff, #f9eaff);
+  background-image: linear-gradient(to bottom, #410083, #1f023c);
   min-height: 100vh;
   line-height: 1.1;
 }
@@ -23,4 +23,52 @@ body {
   font-size: 2.5rem;
   font-weight: 400;
   opacity: 0.6;
+}
+.TodoList {
+  display: flex;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+ul {
+  padding-left: 830px;
+}
+li {
+  width: 300px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background: #1f023c;
+  margin-top: 10px;
+}
+.del {
+  margin-left: 30px;
+}
+button {
+  margin-right: 10px;
+  margin-left: 10px;
+  border: #8e1eff solid 3px;
+  border-radius: 8px;
+  height: 30px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+}
+input {
+  border: #8e1eff solid 3px;
+  border-radius: 8px;
+  height: 30px;
+  box-sizing: border-box;
+  font-size: 20px;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+}
+select {
+  border: #8e1eff solid 3px;
+  border-radius: 8px;
+  height: 30px;
+  box-sizing: border-box;
+  font-size: 14px;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
 }
