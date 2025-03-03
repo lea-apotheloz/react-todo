@@ -1,13 +1,13 @@
 import ElementTodo from './ElementTodo.tsx';
 
-const list = ['Todo 1', 'Todo 2', 'Todo 3', 'Todo 4', 'Todo'];
+const TodoList = ({list}:{list:string[]},) => {
+    //parametre list
 
-const TodoList = () => {
-  return (
+    return (
     <div className={'TodoList'}>
       <ul>
         {list.map((todo, item) => (
-          <ElementTodo todo={todo} key={item} />
+          <ElementTodo  todo={todo} key={item} />
         ))}
       </ul>
     </div>
