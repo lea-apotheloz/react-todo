@@ -1,13 +1,17 @@
 import ElementTodo from './ElementTodo.tsx';
+import { Todo } from './Todo.ts';
 
-const TodoList = ({list}:{list:string[]},) => {
-    //parametre list
+interface inputProps {
+  list: Todo[];
+  deleteTodo: (deleteTodo: Todo) => void;
+}
 
-    return (
+const TodoList = ({ list, deleteTodo }: inputProps) => {
+  return (
     <div className={'TodoList'}>
       <ul>
-        {list.map((todo, item) => (
-          <ElementTodo  todo={todo} key={item} />
+        {list.map((t: Todo) => (
+          <ElementTodo todo={t} key={t.id} deleteTodo={deleteTodo} />
         ))}
       </ul>
     </div>
